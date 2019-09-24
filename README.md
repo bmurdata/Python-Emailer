@@ -4,8 +4,10 @@
    If you have an interest in something, there is probably a forum for it. For more specific things, such as NYC Job Exam results, there may only be a forum post that remains active for years. Staying up to date can be hard, as you generally have two options:
 
    1. Log in to recieve notifications. 
+   
       -The requires an account, exposing your email, and assumes the forum supports notifications, be they email or account based.
    2. Periodically revist the forum. 
+
       -This can get tedious quickly, and if you forget the forum topic name can mean you lose a potentially valuable resource.
 
    To deal with this, this project will do two things.
@@ -17,7 +19,8 @@
 
 ## Technologies Used
 
-   Scrapy- a Python based web scraping tool, chosen for it
+   Scrapy- a Python based web scraping tool.
+
    Smtplib- a Python library to send emails.
 
 ## To-Do and Improvements
