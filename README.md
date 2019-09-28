@@ -23,6 +23,8 @@
 
    Smtplib- a Python library to send emails.
 
+   Pipenv- a virtual environment handler that creates and managed virtualenv environments. 
+
 ## To-Do and Improvements
 
    1. Make scraper for specific forum posts.
