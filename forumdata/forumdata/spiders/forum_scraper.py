@@ -11,10 +11,9 @@ class ForumScraper(scrapy.Spider):
         page = response.url.split('-')[-1]
         #print(response.xpath('//div[@id="posts"]/text()').get())
         
-        filename = 'citydata-%s.html' % page
+        filename = 'citydataLastItem-%s.html' % page
         with open(filename, 'wb') as f:
             #sellist=response.xpath('//div[@id="posts"]//div[starts-with(@id,"post")]/text()').getall()
-            sellist=response.xpath('//div[@id="posts"]//div[starts-with(@id,"post") and position()=(last()-1)]').getall()
-
-            for x in sellist:
-                f.write(x.encode())
+            sellist=response.xpath('//div[@id="posts"]//div[starts-with(@id,"post")]/text()').getall()
+            lastitem=sellist[-1]
+            f.write(lastitem.encode())
