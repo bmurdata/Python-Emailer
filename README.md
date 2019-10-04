@@ -2,9 +2,13 @@
    Python project to send email when new forum posts made.
 ## Demo Usage
 -Install pipenv: https://pypi.org/project/pipenv/
+
 -Run `pipenv install` to install dependencies.
--Run `pipenv shell`
+
+-Run `pipenv shell`.
+
 -Run `scrapy crawl forums` from the forumdata directory.
+
 ## Introduction and Motivation
    If you have an interest in something, there is probably a forum for it. For more specific things, such as NYC Job Exam results, there may only be a forum post that remains active for years. Staying up to date can be hard, as you generally have two options:
 
