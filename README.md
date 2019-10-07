@@ -33,11 +33,3 @@
    Smtplib- a Python library to send emails.
 
    Pipenv- a virtual environment handler that creates and managed virtualenv environments. 
-
-## To-Do and Improvements
-
-   1. Make scraper for specific forum posts.
-   2. Set up emailing process on new posts.
-   3. Set up database to store everything, rather than rely on hard-coded arrays.
-   4. Allow user to reply back to email with new threads to follow, and instructions on what to check for.
-   5. Intergrate app into a web framework(such as Django) to allow user to interact with it on phone or computer outside of terminal.
