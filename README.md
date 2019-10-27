@@ -24,6 +24,10 @@
    Smtplib- a Python library to send emails.
 
    Pipenv- a virtual environment handler that creates and managed virtualenv environments.
+   
+   Docker Toolbox for Windows- Used for initial tests and to a provide a MongoDB connection.
+   
+   MongoDB- used as a backend for the project to store a list of URLs, and email addresses.
 
 ## Completed Tasks
    1. Scraper for forum post, and email processing established.
