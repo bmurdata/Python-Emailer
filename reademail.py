@@ -14,6 +14,7 @@ dbcol=db.linklist
 #SMTP and Email reply logic
 port=465
 smtp_server="smtp.gmail.com"
+#Messages if the Link is in the Database or not.
 message="Subject: {Subject} has been added!\n\n New link:\n\n{Lastpost}\n\n"+"Sent by your Friendly Python Emailer. https://github.com/bmurdata/Python-Emailer"
 message2="Subject: {Subject} already exists!\n\n Verify:\n\n{Lastpost}\n\n"+"Sent by your Friendly Python Emailer. https://github.com/bmurdata/Python-Emailer"
 
@@ -37,8 +38,8 @@ fpw=senderpw
 
 mail.login(femail,fpw)
 mail.select('inbox')
-
-resp,items=mail.search(None,'(FROM "bpmjoker@gmail.com")')
+efilter='(FROM "'+recieverEmail +'")'
+resp,items=mail.search(None,efilter)
 items=items[0].split() #get mail ids
 # items[::-1]
 for emailid in items:
